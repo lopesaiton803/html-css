@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--
+        O atributo autocomplete é novo na HTML5 . A função do atributo é habilitar ou desabilitar o autopreenchimento dos elementos form e input. Alguns navegadores oferecem a funcionalidade de preencher ou sugerir opções de preenchimento de um campo de formulário.
+    -->
+    <form action="cadastro.php"  autocomplete="off" method="post">
+        <p><label for="inome">Nome</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>
+            <input type="submit" value="Enviar"></p>
+    </form>
+</body>
+<!--
+    Definição e Uso
+O atributo especifica como enviar dados de formulário (os dados de formulário são enviados para a página especificada no atributo).method action
+
+Os dados do formulário podem ser enviados como variáveis de URL (com ) ou como postagem HTTP transação (com ). method="get"method="post"
+
+Notas sobre o GET:
+
+Acrescenta dados de formulário à URL em pares nome/valor
+O comprimento de uma URL é limitado (cerca de 3000 caracteres)
+Nunca use o GET para enviar dados confidenciais! (estará visível no URL)
+Útil para envios de formulários em que um usuário deseja marcar o resultado
+O GET é melhor para dados não seguros, como cadeias de caracteres de consulta no Google
+Notas sobre o POST:
+
+Acrescenta dados de formulário dentro do corpo da solicitação HTTP (os dados não são mostrados na URL)
+Não tem limitações de tamanho
+Envios de formulários com POST não podem ser marcados como favoritos
+-->
+</html>

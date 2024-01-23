@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+
+    <p>
+        Acessando o site do 
+        <iframe 
+        src="https://www.cursoemvideo.com" frameborder="1" scolling="yes" height="500px">
+        <a href="https://www.cursoemvideo.com" target="_blank">Curso em video</a>
+        </iframe>
+        para aprender a programar.
+    </p>
+
+    <p>
+        O site do 
+        <iframe
+         src="www.google.com.br" frameborder="1">
+         <a href="www.google.com.br" target="_blank">Google</a>
+        </iframe>
+        também é muito legal, pena que não funciona dentro do iframe
+    </p>
+
+    <p>
+        O repositório do Guanabara no
+        <iframe
+         src="https://gustavoguanabara.github.io" frameborder="1">
+         <a href="https://gustavoguanabara.github.io" target="_blank">github</a>
+        </iframe>
+        também é bem legal!
+    </p>
+    <!--
+        Alguns sites tem uma proteção que não deixa eles funcionarem dentro de iframe
+
+        Tamanho padrão do iframe e de
+        300px x 150px
+        as configurações de iframe em CSS são soberanas 
+
+        scolling="auto" (PADRÃO)= se o iframe exeder o espaço do iframe ele cria uma barra de rolagem
+        scolling="yes" = mesmo que o conteúdo caiba dentro do iframe ele criara uma barra de rolagem
+        scolling="no" = mesmo o conteúdo cendo maior ele não cria barra de rolagem
+
+    -->
+</body>
+</html>

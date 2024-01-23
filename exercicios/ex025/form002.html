@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="10" placeholder="Nome do usuário" autocomplete="username">
+    </p>
+
+    <p>
+        <label for="isen">Senha:</label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="minimo 8 letras" autocomplete="current-password">
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+<!--
+Definição e Uso
+O atributo é um atributo booleano.required
+
+Quando presente, ele especifica que um campo de entrada deve ser preenchido antes de enviar o formulário.
+
+Nota: O atributo funciona com os seguintes tipos de entrada: texto, pesquisa, url, tel, e-mail, senha, seletores de data, número, caixa de seleção, rádio e arquivo.required
+-->
+
+<!--
+    Atributo HTML: minlength
+O atributo minlength define o comprimento mínimo da cadeia de caracteres que o usuário pode inserir em uma <input> ou <textarea>. O atributo deve ter um valor inteiro de 0 ou superior.
+
+O comprimento é medido em unidades de código UTF-16, que (para a maioria dos scripts) é equivalente ao número de caracteres. Se nenhum for especificado ou um valor inválido for especificado, a entrada não terá comprimento mínimo. Esse valor deve ser menor ou igual ao valor de maxlength, caso contrário, o valor nunca será válido, pois é impossível atender a ambos os critérios.minlength
+
+A entrada falhará na validação de restrição se o comprimento do valor de texto do campo for menor que minlength UTF-16 unidades de código de comprimento, com validityState.tooShort retornando . A validação de restrição só é aplicada quando o valor é alterado pelo usuário. Quando o envio falhar, alguns navegadores exibirão uma mensagem de erro indicando o comprimento mínimo necessário e o comprimento atual.true
+-->
+
+<!--
+    O placeholder é um atributo do HTML que cumpre a função de fornecer ao usuário uma dica que descreve o valor esperado em um dado campo de entrada. Esta dica deverá ser apresentada ao usuário antes que ele entre com o valor e deverá ainda, ser curta e objetiva.
+-->
+
+<!--
+    O atributo autocomplete é novo na HTML5 . A função do atributo é habilitar ou desabilitar o autopreenchimento dos elementos form e input. Alguns navegadores oferecem a funcionalidade de preencher ou sugerir opções de preenchimento de um campo de formulário.
+-->
+</html>
